@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .card{
+            width: 30vw;
+            height: 60vh;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: white;
+            cursor: pointer;
+        }
+        img{
+            width: 100%;
+            height: 60%;
+            border-radius: 10px;
+        }
+        .content{
+            width: 100%;
+            height: 40%;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .content h1{
+            width: 80%;
+            font-size: 1.7vw;
+            margin-top:20px;
+            margin-bottom: 40px;
+        }
+
+        #np{
+            font-size: 30px;
+            font-weight: 700;
+            color: rgb(191, 53, 250);
+            margin-right: 10px;
+        }
+
+        #op{
+            font-size: 30px;
+            font-weight: 700;
+            color: gray;
+            text-decoration: line-through;
+            margin-right: 10px;
+            
+        }
+
+        #disc{
+            font-size: 22px;
+            font-weight: 700;
+            background-color: rgb(91, 232, 91);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="dotCoverpic.jpg" alt="">
+        <div class="content">
+            <h1>Web Developement Master Course @dot Batch</h1>
+
+            <span id="np">&#x20B9 4500</span>
+            <span id="op">&#x20B9 6999</span>
+            <span id="disc">42% off</span>
+        </div>
+    </div>
+</body>
+</html>
