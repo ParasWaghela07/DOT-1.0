@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Coffee Mug</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+
+        .wrapper{
+            width: 100%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container{
+            width: 45%;
+            height: 50%;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 45% 55%;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.373);
+        }
+
+        .left{
+            background-image: url(mug.jpg);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-left: 25px;
+            gap: 15px;
+        }
+        #desc{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 17px;
+            color:rgb(87, 79, 79);
+            width: 5px;
+        }
+
+        #title{
+            letter-spacing: 3px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(123, 119, 119);
+        }
+        #np{
+            color: green;
+            font-size:30px ;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #og{
+            color: gray;
+            text-decoration: line-through;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        #atc{
+            border: none;
+            border-radius: 7px;
+            background-color: green;
+            padding: 10px;
+            width: 90%;
+            color: white;
+            font-weight: 700;
+            word-spacing: 0px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            gap: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="left"></div>
+            <div class="right">
+                <p id="title">COFFEE MUG</p>
+                <h1>White Coffee<br>Mug</h1>
+                <pre id="desc">
+Coffee Mugs are designed to express 
+emotions. These are acclaimed for 
+their amazing designs & superior 
+quality.</pre>
+                <div class="price">
+                    <span id="np">$149</span> <span id="og">$230</span>
+                </div>
+
+                <button id="atc"><img src="icon-cart.png" alt="">
+                    Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

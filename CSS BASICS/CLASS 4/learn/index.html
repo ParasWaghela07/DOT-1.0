@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 50vh;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            gap: 5px;
+        }
+        .box1{
+            width: 30%;
+            height: 50%;
+            border: 2px solid black;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2{
+            width: 30%;
+            height: 50%;
+            border: 2px solid black;
+        }
+        .box3{
+            width: 30%;
+            height: 50%;
+            border: 2px solid black;
+        }
+        .box4{
+            width: 30%;
+            height: 50%;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box5{
+            width: 30%;
+            height: 50%;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box6{
+            width: 30%;
+            height: 50%;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">HELLO JI</div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4">Play</div>
+        <div class="box5">Pause</div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gfg layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 60%;
+            background-color: lightcoral;
+            display: grid;
+            grid-template-rows: 50px 1fr 50px;
+            grid-template-columns: 200px 1fr 200px;
+        }
+
+        .box1{
+            /* width: 10%; */
+            /* height: 50%; */
+            border: 2px solid black;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .box2{
+            border: 2px solid black;
+        }
+
+        .box3{
+            border: 2px solid black;
+        }
+
+        .box4{
+            border: 2px solid black;
+        }
+
+        .box5{
+            border: 2px solid red;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
+</body>
+</html>
