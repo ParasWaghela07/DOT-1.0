@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        html,body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            overflow-x:hidden;
+            overflow-y: auto;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 15%;
+            padding-left: 20px;
+            padding-right: 20px;
+            /* border: 2px solid black; */
+        }
+
+        #ttl{
+            text-decoration: underline;
+        }
+        #sbs{
+            color: gray;
+            text-decoration: underline;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        #icon{
+            cursor: pointer;
+        }
+        .main{
+            height: 80%;
+            width: 60%;
+            margin-left:20%;
+            margin-right:20%;
+            margin-bottom: 5%;
+            /* border: 2px solid red; */
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-row-gap: 30px;
+            grid-column-gap: 20px;
+            flex-wrap: wrap;
+        }
+        .box{
+            border: 5px solid rgba(128, 128, 128, 0.395);
+
+            width:100%;
+            height: 100%;
+        }
+        .boxl{
+            padding: 12px;
+        }
+
+        #hd{
+            color: blue;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        #condate{
+            color: gray;
+        }
+
+        #contail{
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        #hd2{
+            color: green;
+        }
+
+    </style>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <p id="sbs">Subscribe</p>
+            <h1 id="ttl">Blog Title</h1>
+            <i class="gg-search" id="icon"></i>
+        </div>
+        <div class="main">
+            <div class="box boxl box1 ">
+                <p id="hd">World</p>
+                <h2 id="con">Example Blog Post</h2>
+                <p id="condate">Nov 12</p>
+                <p id="contail">This card represents an example blog post</p>
+
+                <a href="page.html" id="linkage">Continue reading</a>
+            </div>
+            <div class="box boxl box2">
+                <p id="hd2">Design</p>
+                <h2 id="con">Post title</h2>
+                <p id="condate">Nov 11</p>
+                <p id="contail">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+
+                <a href="page.html" id="linkage">Continue reading</a>
+            </div>
+            <div class="box boxl box3">
+                <p id="hd">World</p>
+                <h2 id="con">Example Blog Post</h2>
+                <p id="condate">Nov 12</p>
+                <p id="contail">This card represents an example blog post</p>
+
+                <a href="page.html" id="linkage">Continue reading</a>
+            </div>
+            <div class="box boxl box4">
+                <p id="hd2">Design</p>
+                <h2 id="con">Post title</h2>
+                <p id="condate">Nov 11</p>
+                <p id="contail">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+
+                <a href="page.html" id="linkage">Continue reading</a>
+            </div>
+            <div class="box boxl box5">
+                <p id="hd">World</p>
+                <h2 id="con">Example Blog Post</h2>
+                <p id="condate">Nov 12</p>
+                <p id="contail">This card represents an example blog post</p>
+
+                <a href="page.html" id="linkage">Continue reading</a>
+            </div>
+            <div class="box boxl box6">
+                <p id="hd2">Design</p>
+                <h2 id="con">Post title</h2>
+                <p id="condate">Nov 11</p>
+                <p id="contail">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+
+                <a href="page.html" id="linkage">Continue reading</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
