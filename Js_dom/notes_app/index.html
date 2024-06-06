@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .styling{
+            background-color: black;
+            color: white;
+            max-height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper flex flex-col relative overflow-x-hidden" >
+        <div class="inline-block bg-blue-50 flex justify-center gap-x-10">
+            <p class="toaddbtn cursor-pointer hover:text-blue-500 text-2xl">Add New Note</p>
+            <p class="cancel cursor-pointer text-2xl">Delete</p>
+        </div>
+        <div class="mainbody h-full w-full bg-red-100 space-x-5 flex flex-wrap p-3">
+            <span class="styling">I am Note1</span>
+        </div>
+        <div class="toaddsection flex flex-col opacity-0 w-[200px] h-[200px] border border-slate-700 absolute left-[50%] top-[50%]">
+            <input type="text" class="ip bg-yellow-100 h-[80%]">
+            <button class="subtn bg-black text-white h-[20%]">ADD</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
