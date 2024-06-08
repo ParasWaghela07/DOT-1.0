@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git-fetch</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+
+            <div class="head-div">
+                <h2 id="title">DevDetective</h2>
+                <div class="mode-btn">
+                    <p id="mode-status">LIGHT</p>
+                    <img src="./assets/images/moon-icon.svg" alt="" id="mode-img">
+                </div>
+            </div>
+    
+            <div class="up-div">
+                <img src="./assets/images/search-icon.svg" alt="">
+                <input type="search" placeholder="Enter a GitHub username..." id="inputBox">
+                <div id="error-div">
+                    no search results
+                </div>
+                <button id="searchBtn">
+                    search
+                </button>
+            </div>
+    
+            <div class="main-div">
+                <div class="left">
+                    <img width="110px" id="proimg">
+                </div>
+    
+                <div class="right">
+                    <div class="first">
+                        <h2 id="name"></h2>
+                        <p id="joined-date"></p>
+                    </div>
+    
+                    <div class="second">
+                        <a href="#"id="url"></a>
+                    </div>
+    
+                    <div class="third">
+                        <p id="desc"></p>
+                    </div>
+    
+                    <div class="about">
+                        <div class="item-1">
+                            <p class="stat-title">Repos</p>
+                            <p class="stat-value" id="repoCount"></p>
+                        </div>
+    
+                        <div class="item-2">
+                            <p class="stat-title">Followers</p>
+                            <p class="stat-value" id="follower-count"></p>
+                        </div>
+    
+                        <div class="item-3">
+                            <p class="stat-title">Following</p>
+                            <p class="stat-value" id="following-count"></p>
+                        </div>
+                    </div>
+    
+                    <div class="social-media">
+                        <div class="first-row">
+    
+                            <div class="temp">
+                            <img src="./assets/images/location-icon.svg" alt="">
+                            <p id="location-data"></p>
+                            </div>
+    
+                            <div class="temp">
+                            <img src="./assets/images/website-icon.svg" alt="">
+                            <a id="web-data"></a>
+                            </div>
+    
+    
+                        </div>
+                        <div class="second-row">
+                                <div class="temp">
+                                <img src="./assets/images/twitter-icon.svg" alt="">
+                                <a id="twitter-data"></a>
+                                </div>
+        
+                                <div class="temp">
+                                <img src="./assets/images/company-icon.svg" alt="">
+                                <p id="company-data"></p>
+                                </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
