@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-liner Jokes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        *,*::after,*::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .f{
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            background-image: url('grad.avif');
+            background-size: cover;
+            background-repeat:no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .box{
+            width: 40%;
+            height: 60%;
+            /* background-color: rgba(219, 226, 239, 0.392); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            font-size: 30px;
+            gap: 5px;
+        }
+
+        #joke-1{
+            width: 100%;
+        }
+
+        #joke-2{
+            width: 100%;
+        }
+
+        #btn{
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            border: none;
+            padding: 10px;
+            font-size: 25px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.5s;
+            width: 200px;
+
+        }
+
+        #btn:hover{
+            color: rgba(0, 0, 0, 0.43);
+            letter-spacing: 3px;
+        }
+
+        #load{
+            color: gray;
+            opacity: 0;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img  id="load" src="loader.gif" width="70px">
+        <div class="box">
+            <p id="joke-1">
+                "setup"
+            </p>
+
+            <p id="joke-2">
+                "Punchline"
+            </p>
+        </div>
+        <button id="btn">Generate a joke</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -134,6 +134,13 @@ ai
 
 }
 
+inputBox.addEventListener('keydown',function(e){
+    if(e.key=="Enter"){
+        if(inputBox.value)
+        fetchData(url+inputBox.value);
+    }
+})
+
 
 Submitbtn.addEventListener('click',function(){
     if(inputBox.value)
