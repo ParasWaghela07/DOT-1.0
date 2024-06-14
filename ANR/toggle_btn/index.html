@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle_btn</title>
+    <style>
+        *,*::before,*::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn{
+            width: 200px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: rgba(255, 0, 0, 0.36);
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .dot{
+            height: 100%;
+            width: 45%;
+            background-color: red;
+            border-radius: 50%;
+            transition: 0.5s;
+        }
+
+        .right{
+            transform: translateX(120%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <div class="dot"></div>
+    </div>
+
+    <script>
+        const btn=document.querySelector('.btn');
+        const circle=document.querySelector('.dot');
+        btn.addEventListener('click',function(){
+            if(circle.classList.contains("right")){
+                circle.classList.remove("right")
+                circle.style.backgroundColor="red";
+                btn.style.backgroundColor="rgba(255, 0, 0, 0.36)";
+            }
+            else{
+                circle.classList.add("right");
+                circle.style.backgroundColor="green";
+                btn.style.backgroundColor="rgba(0, 320, 0, 0.649)";
+            }
+        })
+    </script>
+</body>
+</html>
