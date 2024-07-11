@@ -34,7 +34,7 @@ exports.login=async function(req,res){
             let token=jwt.sign(payload,process.env.JWT_SECRET,{expiresIn:"2hr"});
 
             const options={
-                expires:new Date(Date.now() + 3*24*60*60*1000),
+                expires:new Date(Date.now() + 20*1000),
                 httpOnly:true
             }
 
@@ -51,7 +51,8 @@ exports.login=async function(req,res){
                 httpOnly: true,
                 secure: false, // Set to true if using HTTPS
                 sameSite: 'Lax', // Adjust as necessary
-                path: '/' // Cookie accessible across all paths
+                path: '/', // Cookie accessible across all paths
+                expires:new Date(Date.now() + 24*60*60*1000),
             });
             
 
