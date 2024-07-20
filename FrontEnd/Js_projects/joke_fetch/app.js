@@ -3,6 +3,7 @@ const j1=document.querySelector('#joke-1');
 const j2=document.querySelector('#joke-2');
 const load=document.querySelector('#load');
 
+// setJoke();
 
 function setJoke(){
     fetch('https://official-joke-api.appspot.com/random_joke')

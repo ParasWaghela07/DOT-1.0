@@ -29,10 +29,9 @@ function Product({item}){
     }
 
     return(
-        <div className="flex flex-col items-center justify-between 
-     transition duration-300 ease-in gap-3 p-4 mt-10 ml-5 rounded-xl border border-slate-300 hover:shadow-2xl hover:border-slate-900">
+        <div className="flex flex-col items-center justify-between transition duration-300 ease-in gap-3 px-3 py-4 mt-10 rounded-xl border border-slate-300 hover:shadow-2xl hover:border-slate-900">
             <h2 className="text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1">{item.title}</h2>
-            <p className="w-40 text-gray-400 font-normal text-[10px] text-left">{item.description.split(" ").slice(0,10).join(" ") + "..."}</p>
+            <p className="w-40 text-gray-500 font-normal text-[12px] text-left">{item.description.split(" ").slice(0,10).join(" ") + "..."}</p>
             <div className="h-[180px]">
                 <img src={item.image} className="h-full w-full"/>
             </div>

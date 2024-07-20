@@ -7,7 +7,7 @@ import { AppContext } from "../context/AppContext";
 function Navbar(){
     const{cartData,setcartData}=useContext(AppContext);
     return(
-        <div className="w-[100vw] h-[10vh] bg-[#0f172a]">
+        <div className="w-[100vw] h-[10vh] bg-[#0f172a] px-4">
             <div className="max-w-[1100px]  mx-auto h-full flex justify-between items-center relative">
                 
                 <NavLink to="/">

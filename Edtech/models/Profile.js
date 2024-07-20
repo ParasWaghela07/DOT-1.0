@@ -1,24 +1,22 @@
-const mongoose=require('mongoose');
+const mongoose = require("mongoose");
 
-const profileSchema=new mongoose.Schema({
-    gender:{
-        type:String
-    },
+// Define the Profile schema
+const profileSchema = new mongoose.Schema({
+	gender: {
+		type: String,
+	},
+	dateOfBirth: {
+		type: String,
+	},
+	about: {
+		type: String,
+		trim: true,
+	},
+	contactNumber: {
+		type: Number,
+		trim: true,
+	},
+});
 
-    dateofBirth:{
-        type:String
-    },
-
-    about:{
-        type:String,
-        trim:true
-    },
-
-    contactNumber:{
-        type:Number,
-        trim:true
-    }
-
-})
-
-module.exports=mongoose.model("profileSchema",profileSchema);
+// Export the Profile model
+module.exports = mongoose.model("Profile", profileSchema);

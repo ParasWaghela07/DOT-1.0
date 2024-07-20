@@ -21,11 +21,11 @@ function Card({item}){
     return(
         <div className="flex flex-col mb-10 w-[100%] gap-y-7">
 
-            <div className="flex">
-            <div className="w-[30%] h-[100%]">
+            <div className="flex flex-col gap-y-5 items-center md:flex-row">
+                <div className="w-[23%] md:w-[30%] h-[100%]">
                 <img src={item.image} className="w-full h-full object-cover"/>
-            </div>
-            <div className="flex flex-col gap-y-5 px-5 w-[70%]">
+                </div>
+                <div className="flex flex-col gap-y-5 px-5 w-[70%]">
                 <h2 className="text-[#0f172a] font-bold text-md">{item.title}</h2>
                 <p className="font-semibold text-gray-600">{item.description.split(" ").slice(0,15).join(" ") + "...."}</p>
 
@@ -35,7 +35,7 @@ function Card({item}){
                     <BiSolidTrashAlt className="text-red-800"/>
                     </button>
                 </div>
-            </div>
+                </div>
             </div>
 
 
