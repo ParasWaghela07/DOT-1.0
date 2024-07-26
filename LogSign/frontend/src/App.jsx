@@ -27,7 +27,7 @@ function App() {
     // const res=await response.json();
     try{
       const response = await axios({
-        url: "http://localhost:4000/checkAlreadyLogin",
+        url: "http://localhost:4000/checkUserCookie",
         method: "GET",
         headers: { "Content-Type": "application/json" },
         withCredentials: true 
